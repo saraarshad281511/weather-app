@@ -34,6 +34,8 @@ jobs:
 
       - name: Build website
         run: npm run build
+        env:
+          VISUAL_CROSSING_API_KEY: ${{ secrets.VISUAL_CROSSING_API_KEY }}
 
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
