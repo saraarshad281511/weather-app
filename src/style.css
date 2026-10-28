@@ -1,0 +1,178 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dff3ff;
+  color: #243447;
+}
+#content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #247ba0;
+  font-size: 2.5rem;
+}
+
+#weather-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+#location-input {
+  padding: 12px 15px;
+  width: 260px;
+  max-width: 100%;
+  border: 1px solid #b8d9eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#weather-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #247ba0;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#weather-form button:hover {
+  background-color: #185b78;
+}
+
+body {
+  background-color: #dff3ff;
+  background-image:
+    radial-gradient(
+      square,
+      #ffffff 0 25%,
+      transparent 26%
+    );
+  background-size: 24px 24px;
+}
+
+/* Pixel cloud decorations */
+
+/* Pixel-art clouds */
+
+/* Pixel-art cloud decorations */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 180px;
+  height: 100px;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/036/395/794/small/blue-sky-cloud-bubble-pixel-design-for-decoration-wheather-forcast-pixel-design-png.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  top: 50px;
+  left: 30px;
+}
+
+body::after {
+  top: 220px;
+  right: 40px;
+  transform: scale(0.75);
+}
+#temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #174a7e;
+  margin: 10px 0;
+}
+#temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #174a7e;
+  margin: 10px 0;
+}
+
+#conditions {
+  font-size: 18px;
+  color: #37658c;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+#weather-result {
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 24px;
+  box-sizing: border-box;
+
+  background-color: white;
+  border: 2px solid #b8dcf5;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(23, 74, 126, 0.15);
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #weather-result {
+    padding: 18px;
+    margin-top: 16px;
+  }
+
+  #city-name {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+  }
+
+  #temperature {
+    font-size: 40px;
+  }
+
+  #conditions {
+    font-size: 16px;
+  }
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.weather-detail {
+  min-width: 0;
+  padding: 12px 8px;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+}
+
+.weather-detail span {
+  display: block;
+  color: #37658c;
+  font-size: 13px;
+}
+
+.weather-detail p {
+  margin: 6px 0 0;
+  color: #174a7e;
+  font-size: 18px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 320px) {
+  .weather-details {
+    grid-template-columns: 1fr;
+  }
+}
+

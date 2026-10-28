@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    
+<div id="content">
+  <h1>Weather App</h1>
+  <p>Find the weather in your favourite city.</p>
+
+  <form id="weather-form">
+    <input
+      type="text"
+      id="location-input"
+      placeholder="Enter a city, e.g. Lahore"
+      required
+    />
+
+   <button type="submit" id="search-button">Search</button>
+  </form>
+
+ <div id="weather-result">
+  <h2 id="city-name"></h2>
+  <p id="temperature"></p>
+  <p id="conditions"></p>
+
+  <div class="weather-details">
+    <div class="weather-detail">
+      <span>Humidity</span>
+      <p id="humidity"></p>
+    </div>
+
+    <div class="weather-detail">
+      <span>Wind speed</span>
+      <p id="wind-speed"></p>
+    </div>
+
+    <div class="weather-detail">
+      <span>Feels like</span>
+      <p id="feels-like"></p>
+    </div>
+
+    <div class="weather-detail">
+      <span>Precipitation</span>
+      <p id="precipitation"></p>
+    </div>
+  </div>
+</div>
+</div>
+
+  </body>
+</html>
